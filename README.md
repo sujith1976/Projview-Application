@@ -30,7 +30,7 @@ DevMarket is a modern platform for selling and showcasing web development projec
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/devmarket.git
+   git clone https://github.com/sujith1976/Projview-Application.git
    ```
 
 2. Open the project in your code editor.
@@ -97,4 +97,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For any questions or support, please contact:
 - Email: your.email@example.com
-- Website: [yourwebsite.com](https://yourwebsite.com) 
+- Website: [yourwebsite.com](https://yourwebsite.com)

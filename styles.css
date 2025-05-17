@@ -368,6 +368,34 @@ nav ul li a.active::after {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.about-devmarket-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 33, 61, 0.85);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.about-devmarket-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-devmarket-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 .features {

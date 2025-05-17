@@ -1,8 +1,8 @@
-# DevMarket - Web Development Projects Marketplace
+# CodeCraft - Web Development Projects Marketplace
 
-DevMarket is a modern platform for selling and showcasing web development projects with demonstration videos. This platform allows developers to sell their ready-to-deploy web solutions to clients who need quick and reliable web development projects.
+CodeCraft is a modern platform for selling and showcasing web development projects with demonstration videos. This platform allows developers to sell their ready-to-deploy web solutions to clients who need quick and reliable web development projects.
 
-## About DevMarket
+## About CodeCraft
 
 My Web Projects, Built to Impress  
 Explore the web development projects I've crafted with care and expertise.  
@@ -93,7 +93,7 @@ You can also deploy this website on any web hosting service:
 
 1. Upload all files to your web hosting server.
 2. Ensure that `index.html` is set as the default page.
-3. Your DevMarket platform will be live!
+3. Your CodeCraft platform will be live!
 
 ## License
 

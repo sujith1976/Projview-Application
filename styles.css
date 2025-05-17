@@ -372,7 +372,7 @@ nav ul li a.active::after {
     position: relative;
 }
 
-.about-devmarket-content {
+.about-codecraft-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -387,13 +387,13 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.about-devmarket-content h3 {
+.about-codecraft-content h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: white;
 }
 
-.about-devmarket-content p {
+.about-codecraft-content p {
     font-size: 1.1rem;
     margin-bottom: 15px;
     line-height: 1.6;

@@ -2,6 +2,13 @@
 
 DevMarket is a modern platform for selling and showcasing web development projects with demonstration videos. This platform allows developers to sell their ready-to-deploy web solutions to clients who need quick and reliable web development projects.
 
+## About DevMarket
+
+My Web Projects, Built to Impress  
+Explore the web development projects I've crafted with care and expertise.  
+Each comes with a demo video so you can see it in action before buying.  
+If you like what you see, it's just a click away from being yours.
+
 ## Features
 
 - **Project Showcase**: Display your web development projects with detailed descriptions, features, and specifications.
@@ -77,11 +84,16 @@ The color scheme can be modified in the `styles.css` file:
 
 ## Deployment
 
-This is a static website that can be deployed on any web hosting service:
+This is a static website that has been deployed using Vercel:
+
+- **Live Demo**: [projview-application.vercel.app](https://projview-application.vercel.app)
+- **Alternative Link**: [projview-application-e54qkv72a.vercel.app](https://projview-application-e54qkv72a.vercel.app)
+
+You can also deploy this website on any web hosting service:
 
 1. Upload all files to your web hosting server.
 2. Ensure that `index.html` is set as the default page.
-3. Your DevMarket platform is now live!
+3. Your DevMarket platform will be live!
 
 ## License
 

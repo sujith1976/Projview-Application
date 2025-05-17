@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMarket - Premium Web Development Projects Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DevMarket</h1>
+                <p>Premium Web Development Solutions</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ready-to-Deploy Web Development Projects</h1>
+                <p>Save time and resources with our premium, fully-tested web solutions</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Browse Projects</a>
+                    <a href="#about" class="btn secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Projects</p>
+            </div>
+            <div class="stat-item">
+                <h3>100+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>5+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Support</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Explore our collection of ready-to-deploy web development projects</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+                <button class="filter-btn" data-filter="blog">Blog</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Modern E-Commerce Platform</h3>
+                        <p>A complete e-commerce solution with payment integration, inventory management, and responsive design.</p>
+                        <div class="project-meta">
+                            <span class="price">$199</span>
+                            <a href="#" class="btn primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="portfolio">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Portfolio Template">
+                        <div class="project-overlay">
+                            <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Creative Portfolio Template</h3>
+                        <p>A stunning portfolio website with smooth animations, project showcases, and contact form.</p>
+                        <div class="project-meta">
+                            <span class="price">$89</span>
+                            <a href="#" class="btn primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Admin Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Admin Dashboard & CRM</h3>
+                        <p>A comprehensive admin panel with analytics, user management, and customizable widgets.</p>
+                        <div class="project-meta">
+                            <span class="price">$249</span>
+                            <a href="#" class="btn primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="blog">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Blog System">
+                        <div class="project-overlay">
+                            <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Modern Blog Platform</h3>
+                        <p>A feature-rich blogging system with categories, tags, comments, and SEO optimization.</p>
+                        <div class="project-meta">
+                            <span class="price">$129</span>
+                            <a href="#" class="btn primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="projects.html" class="btn secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>Why Choose DevMarket?</h2>
+                        <p>Your trusted source for premium web development projects</p>
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-code"></i>
+                            <h3>Clean Code</h3>
+                            <p>All projects follow best coding practices with well-structured, documented code.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Responsive Design</h3>
+                            <p>Every project is fully responsive and works perfectly on all devices.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Ready to Deploy</h3>
+                            <p>Get your website up and running quickly with our ready-to-deploy solutions.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <h3>Dedicated Support</h3>
+                            <p>Our team is always available to help with installation and customization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x800" alt="About DevMarket">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple process to get your website up and running</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Browse Projects</h3>
+                    <p>Explore our collection of ready-to-deploy web projects and find the one that suits your needs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>2. Purchase</h3>
+                    <p>Securely purchase the project through our payment gateway with multiple payment options.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>3. Download</h3>
+                    <p>Instantly download your project files, documentation, and setup instructions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>4. Deploy</h3>
+                    <p>Follow the simple setup guide to deploy your website and go live quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Clients Say</h2>
+                <p>Feedback from our satisfied customers</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The e-commerce platform I purchased was exactly what I needed. Clean code, great documentation, and excellent support!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/100x100" alt="John Doe">
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>CEO, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I saved weeks of development time by using DevMarket's portfolio template. The code quality is outstanding!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/100x100" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The admin dashboard I purchased has all the features I needed and more. Highly recommend DevMarket for quality web projects!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/100x100" alt="Michael Brown">
+                        <div class="author-info">
+                            <h4>Michael Brown</h4>
+                            <p>CTO, GrowthLabs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions? Contact us for more information</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>contact@devmarket.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+1 (123) 456-7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>123 Web Street, Developer City</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>DevMarket</h2>
+                    <p>Premium Web Development Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">E-Commerce</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DevMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="demo-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

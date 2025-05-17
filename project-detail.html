@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern E-Commerce Platform - DevMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding-top: 120px;
+            padding-bottom: 100px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .project-title {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .project-title h1 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .project-category {
+            display: inline-block;
+            background-color: var(--light-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .project-meta-info {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--gray-color);
+        }
+        
+        .project-price-box {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .project-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        
+        .price-features {
+            margin-bottom: 25px;
+        }
+        
+        .price-features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .price-features li i {
+            color: var(--success-color);
+            margin-top: 5px;
+        }
+        
+        .purchase-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .project-content {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .project-main {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .project-sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .project-gallery {
+            margin-bottom: 40px;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 400px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-thumbnails {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        
+        .thumbnail {
+            width: 100px;
+            height: 70px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        
+        .thumbnail.active,
+        .thumbnail:hover {
+            opacity: 1;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .project-description {
+            margin-bottom: 40px;
+        }
+        
+        .project-description h2 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        
+        .project-description p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .project-features {
+            margin-bottom: 40px;
+        }
+        
+        .project-features h2 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .feature-item {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .feature-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .feature-item p {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        .project-tech {
+            margin-bottom: 40px;
+        }
+        
+        .project-tech h2 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .tech-item {
+            background-color: var(--light-color);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: var(--dark-color);
+        }
+        
+        .project-demo {
+            margin-bottom: 40px;
+        }
+        
+        .project-demo h2 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        
+        .demo-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+        }
+        
+        .demo-video img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .play-button i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .play-button:hover {
+            background-color: var(--primary-color);
+        }
+        
+        .play-button:hover i {
+            color: white;
+        }
+        
+        .sidebar-box {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-box h3 {
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .project-details-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .project-details-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            color: var(--gray-color);
+        }
+        
+        .detail-value {
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+        
+        .author-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .author-social {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .author-social a {
+            width: 30px;
+            height: 30px;
+            background-color: var(--light-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+        
+        .author-social a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .related-projects h3 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .related-projects .projects-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+        
+        @media (max-width: 992px) {
+            .project-content {
+                flex-direction: column;
+            }
+            
+            .project-sidebar {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DevMarket</h1>
+                <p>Premium Web Development Solutions</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <div class="project-title">
+                    <span class="project-category">E-Commerce</span>
+                    <h1>Modern E-Commerce Platform</h1>
+                    <div class="project-meta-info">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Updated: June 15, 2023</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>125 Sales</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5 (48 Reviews)</span>
+                        </div>
+                    </div>
+                    <p>A complete e-commerce solution with payment integration, inventory management, responsive design, and advanced features to help you launch your online store quickly.</p>
+                </div>
+                
+                <div class="project-price-box">
+                    <div class="project-price">$199</div>
+                    <ul class="price-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Full Source Code</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>6 Months Support</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Documentation Included</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regular Updates</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn primary purchase-btn">Purchase Now</a>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-main">
+                    <div class="project-gallery">
+                        <div class="main-image">
+                            <img src="https://via.placeholder.com/800x500" alt="E-Commerce Platform">
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <div class="thumbnail active">
+                                <img src="https://via.placeholder.com/800x500" alt="E-Commerce Platform">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/800x500" alt="E-Commerce Platform Dashboard">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/800x500" alt="E-Commerce Platform Mobile">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/800x500" alt="E-Commerce Platform Checkout">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <h2>Description</h2>
+                        <p>Our Modern E-Commerce Platform is a complete solution for businesses looking to establish or upgrade their online presence. Built with the latest technologies and best practices, this platform offers everything you need to run a successful online store.</p>
+                        <p>Whether you're a small business owner or managing a large enterprise, our platform scales to meet your needs. With an intuitive admin dashboard, managing products, orders, customers, and analytics has never been easier.</p>
+                        <p>The platform is fully responsive and optimized for all devices, ensuring your customers have a seamless shopping experience whether they're on desktop, tablet, or mobile.</p>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h2>Key Features</h2>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h3>Product Management</h3>
+                                <p>Easily add, edit, and manage products with multiple variants and options.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>Payment Integration</h3>
+                                <p>Supports multiple payment gateways including Stripe, PayPal, and more.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-box"></i>
+                                <h3>Inventory Management</h3>
+                                <p>Track stock levels and receive notifications for low inventory.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-truck"></i>
+                                <h3>Order Processing</h3>
+                                <p>Streamlined order management with status tracking and notifications.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <h3>Customer Accounts</h3>
+                                <p>User registration, profiles, order history, and wishlist functionality.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Analytics Dashboard</h3>
+                                <p>Comprehensive analytics to track sales, visitors, and performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h2>Technology Stack</h2>
+                        <div class="tech-stack">
+                            <span class="tech-item">React.js</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Express</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">Redux</span>
+                            <span class="tech-item">Stripe API</span>
+                            <span class="tech-item">PayPal API</span>
+                            <span class="tech-item">JWT Authentication</span>
+                            <span class="tech-item">AWS S3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-demo">
+                        <h2>Watch Demo</h2>
+                        <div class="demo-video">
+                            <img src="https://via.placeholder.com/800x450" alt="E-Commerce Platform Demo">
+                            <div class="play-button" id="play-demo">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-sidebar">
+                    <div class="sidebar-box">
+                        <h3>Project Details</h3>
+                        <ul class="project-details-list">
+                            <li>
+                                <span class="detail-label">Version</span>
+                                <span class="detail-value">2.5.0</span>
+                            </li>
+                            <li>
+                                <span class="detail-label">Last Update</span>
+                                <span class="detail-value">June 15, 2023</span>
+                            </li>
+                            <li>
+                                <span class="detail-label">Files Included</span>
+                                <span class="detail-value">HTML, CSS, JS, Documentation</span>
+                            </li>
+                            <li>
+                                <span class="detail-label">Dependencies</span>
+                                <span class="detail-value">React, Node.js, MongoDB</span>
+                            </li>
+                            <li>
+                                <span class="detail-label">Compatible Browsers</span>
+                                <span class="detail-value">Chrome, Firefox, Safari, Edge</span>
+                            </li>
+                            <li>
+                                <span class="detail-label">Documentation</span>
+                                <span class="detail-value">Yes</span>
+                            </li>
+                            <li>
+                                <span class="detail-label">Support</span>
+                                <span class="detail-value">6 Months</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-box">
+                        <h3>Author</h3>
+                        <div class="author-box">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/100x100" alt="Author">
+                            </div>
+                            <div class="author-info">
+                                <h4>John Smith</h4>
+                                <p>Full Stack Developer</p>
+                                <div class="author-social">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-box">
+                        <h3>Need Help?</h3>
+                        <p>If you have any questions about this project, feel free to contact us.</p>
+                        <a href="index.html#contact" class="btn secondary" style="width: 100%; margin-top: 15px;">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="related-projects">
+                <h3>Related Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="ecommerce">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Marketplace Platform">
+                            <div class="project-overlay">
+                                <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Multi-vendor Marketplace</h3>
+                            <p>A complete marketplace solution allowing multiple vendors to sell products.</p>
+                            <div class="project-meta">
+                                <span class="price">$299</span>
+                                <a href="#" class="btn primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="ecommerce">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Food Delivery App">
+                            <div class="project-overlay">
+                                <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Food Delivery Platform</h3>
+                            <p>A food ordering and delivery system with restaurant management.</p>
+                            <div class="project-meta">
+                                <span class="price">$259</span>
+                                <a href="#" class="btn primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="dashboard">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Admin Dashboard">
+                            <div class="project-overlay">
+                                <a href="#" class="view-demo"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Admin Dashboard & CRM</h3>
+                            <p>A comprehensive admin panel with analytics and user management.</p>
+                            <div class="project-meta">
+                                <span class="price">$249</span>
+                                <a href="#" class="btn primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>DevMarket</h2>
+                    <p>Premium Web Development Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">E-Commerce</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DevMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="demo-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional scripts for project detail page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery functionality
+            const mainImage = document.querySelector('.main-image img');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    // Update main image
+                    mainImage.src = this.querySelector('img').src;
+                    
+                    // Update active state
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Demo video functionality
+            const playButton = document.getElementById('play-demo');
+            const modal = document.getElementById('video-modal');
+            const videoFrame = document.getElementById('demo-video');
+            const closeModal = document.querySelector('.close-modal');
+            
+            playButton.addEventListener('click', function() {
+                // Set video source (in a real app, you would get this from a data attribute)
+                videoFrame.setAttribute('src', 'https://www.youtube.com/embed/dQw4w9WgXcQ'); // Replace with actual video ID
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            });
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+                videoFrame.setAttribute('src', ''); // Stop the video from playing when modal is closed
+                document.body.style.overflow = ''; // Re-enable scrolling
+            });
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    videoFrame.setAttribute('src', '');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
